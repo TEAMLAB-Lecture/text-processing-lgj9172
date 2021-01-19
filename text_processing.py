@@ -58,5 +58,5 @@ def no_vowels(input_string: str):
             >>> tp.normalize(input_string2)
             ''W lv Pythn!'
     """
-    no_vowel_string = input_string.lower().replace("a", "").replace("e", "").replace("i", "").replace("o", "").replace("u", "")
+    no_vowel_string = input_string.lower().replace("a", "").replace("e", "").replace("i", "").replace("o", "").replace("u", "").capitalize()
     return no_vowel_string
