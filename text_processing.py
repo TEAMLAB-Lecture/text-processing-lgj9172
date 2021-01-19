@@ -1,3 +1,4 @@
+import re
 #######################
 # Test Processing I   #
 #######################
@@ -58,5 +59,5 @@ def no_vowels(input_string: str):
             >>> tp.normalize(input_string2)
             ''W lv Pythn!'
     """
-    no_vowel_string = input_string.lower().replace("a", "").replace("e", "").replace("i", "").replace("o", "").replace("u", "").capitalize()
+    no_vowel_string = re.sub(string=input_string, pattern="[aeiouAEIOU]", repl="", flags="i")
     return no_vowel_string
